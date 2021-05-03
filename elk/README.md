@@ -18,7 +18,7 @@ cd coreelec-docker-containers/elk
 #
 
 # Create the structure under /storage/.docker/volumes/elk/
-cp -a storage /storage
+cp -a storage/. /storage
 
 # Adjust permissions
 chown -R 1000:1000 /storage/.docker/volumes/elk
