@@ -14,6 +14,16 @@ Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that imple
 git clone https://github.com/tamusiunas/coreelec-docker-containers.git
 cd coreelec-docker-containers/eclipse-mosquitto
 
+# Create the structure under /storage/.docker/volumes/mosquitto
+mkdir -p /storage/.docker/volumes/mosquitto/data
+mkdir -p /storage/.docker/volumes/mosquitto/log
+mkdir -p /storage/.docker/volumes/mosquitto/config
+
+# Adjust permissions
+chown -R 1883:1883 /storage/.docker/volumes/mosquitto/data
+chown -R 1883:1883 /storage/.docker/volumes/mosquitto/log
+chown -R 1883:1883 /storage/.docker/volumes/mosquitto/config
+
 #
 # Container usage
 #
