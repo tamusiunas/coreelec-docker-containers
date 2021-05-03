@@ -1,6 +1,4 @@
-# corelec-docker-containers
-
-**Docker Containers for CoreELEC**
+# Docker containers for CoreELEC ARM64
 
 CoreELEC is a Linux system (JeOS - Just enough Operational System) that runs on devices with Amlogic processors. It has the minimum required to run the Kodi system and uses the original Amlogic Kernel for Android (4.9.113) having support for almost all embedded devices (Bluetooth, WiFi, Ethernet, Audio and Video Output, Hardware Video Decoding) using the original Android structure while other Linux distributions often do not support all installed devices.
 
@@ -8,7 +6,7 @@ Usually new software is installed through add-on using the GUI interface (Kodi),
 
 Generally boxes sold with the Amlogic processors line have reasonably high memory for this type of system (4/8 GB) and multi-core processor with a very attractive price. The possibility of using a docker, especially the latest versions with security fixes, can make this type of equipment very efficient for a lot of domestic applications, such as servers for IoT.
 
-**This project provides containers to run on ARM64 distro**
+**This project provides containers to run on ARM64 only!**
 
 ##List of Containers
 
