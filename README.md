@@ -14,8 +14,8 @@ Generally boxes sold with the Amlogic processors line have reasonably high memor
 
 Container|Description|Site
 ---------|-----------|----
-[duckdns](tree/main/duckdns)|Free dynamic DNS hosted on AWS| [duckdns.org](https://www.duckdns.org)
-[eclipse-mosquitto](tree/main/eclipse-mosquitto)|Message broker that implements the MQTT protocol|[mosquitto.org](https://mosquitto.org)
-[elk](tree/main/elk)|Elasticsearch, Logstash, and Kibana|[elastic.co](https://www.elastic.co/what-is/elk-stack)
-[homebridge](tree/main/homebridge)|Integrate smart home devices that do not natively support HomeKit|[homebridge.io](https://homebridge.io)
-[metricbeat](tree/main/metricbeat)|System-level monitoring|[elastic.co](https://www.elastic.co/beats/metricbeat)
+[duckdns](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/duckdns)|Free dynamic DNS hosted on AWS| [duckdns.org](https://www.duckdns.org)
+[eclipse-mosquitto](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/eclipse-mosquitto)|Message broker that implements the MQTT protocol|[mosquitto.org](https://mosquitto.org)
+[elk](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/elk)|Elasticsearch, Logstash, and Kibana|[elastic.co](https://www.elastic.co/what-is/elk-stack)
+[homebridge](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/homebridge)|Integrate smart home devices that do not natively support HomeKit|[homebridge.io](https://homebridge.io)
+[metricbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/metricbeat)|System-level monitoring|[elastic.co](https://www.elastic.co/beats/metricbeat)
