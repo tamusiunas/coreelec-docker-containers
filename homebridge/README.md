@@ -11,6 +11,9 @@ Homebridge allows you to integrate with smart home devices that do not natively 
 ## Usage:
 
 ```bash
+git clone https://github.com/tamusiunas/coreelec-docker-containers.git
+cd homebridge
+
 #
 # Important! Create the structure to persist data before starting the container.
 #
@@ -19,10 +22,10 @@ mkdir -p /storage/.docker/volumes/homebridge
 #
 # Container usage
 #
-docker-compose up (run in foreground)
-docker-compose down (remove container)
-docker-compose start (run on background)
-docker-compose start (stop service)
+docker-compose up # (run in foreground)
+docker-compose down # (remove container)
+docker-compose start # (run on background)
+docker-compose start # (stop service)
 
 ```
 

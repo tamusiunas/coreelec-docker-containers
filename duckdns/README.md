@@ -9,6 +9,8 @@ Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) t
 [https://www.duckdns.org](https://www.duckdns.org)
 
 ## Usage:
+git clone https://github.com/tamusiunas/coreelec-docker-containers.git
+cd duckdns
 
 ```bash
 #

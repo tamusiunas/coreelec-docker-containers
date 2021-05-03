@@ -10,7 +10,8 @@ Collect metrics from your systems and services. From CPU to memory, Redis to NGI
 ## Usage:
 
 ```bash
-
+git clone https://github.com/tamusiunas/coreelec-docker-containers.git
+cd metricbeat
 
 #
 # Important! Create the structure to persist data before starting the containers.
@@ -29,10 +30,10 @@ cp -a storage /storage
 #
 # Containers usage
 #
-docker-compose up (run in foreground)
-docker-compose down (remove container)
-docker-compose start (run on background)
-docker-compose start (stop service)
+docker-compose up # (run in foreground)
+docker-compose down # (remove container)
+docker-compose start # (run on background)
+docker-compose start # (stop service)
 
 ```
 

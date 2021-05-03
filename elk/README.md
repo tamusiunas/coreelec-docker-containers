@@ -10,6 +10,9 @@ The Elastic Stack is the next evolution of the ELK Stack.
 ## Usage:
 
 ```bash
+git clone https://github.com/tamusiunas/coreelec-docker-containers.git
+cd elk
+
 #
 # Important! Create the structure to persist data before starting the containers.
 #
@@ -29,10 +32,10 @@ chown -R 1000:1000 /storage/.docker/volumes/elk
 #
 # Containers usage
 #
-docker-compose up (run in foreground)
-docker-compose down (remove container)
-docker-compose start (run on background)
-docker-compose start (stop service)
+docker-compose up # (run in foreground)
+docker-compose down # (remove container)
+docker-compose start # (run on background)
+docker-compose start # (stop service)
 
 ```
 
