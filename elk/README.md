@@ -11,7 +11,7 @@ The Elastic Stack is the next evolution of the ELK Stack.
 
 ```bash
 git clone https://github.com/tamusiunas/coreelec-docker-containers.git
-cd elk
+cd coreelec-docker-containers/elk
 
 #
 # Important! Create the structure to persist data before starting the containers.

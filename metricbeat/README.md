@@ -11,7 +11,7 @@ Collect metrics from your systems and services. From CPU to memory, Redis to NGI
 
 ```bash
 git clone https://github.com/tamusiunas/coreelec-docker-containers.git
-cd metricbeat
+cd coreelec-docker-containers/metricbeat
 
 #
 # Important! Create the structure to persist data before starting the containers.

@@ -12,7 +12,7 @@ Homebridge allows you to integrate with smart home devices that do not natively 
 
 ```bash
 git clone https://github.com/tamusiunas/coreelec-docker-containers.git
-cd homebridge
+cd coreelec-docker-containers/homebridge
 
 #
 # Important! Create the structure to persist data before starting the container.
