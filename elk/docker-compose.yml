@@ -1,0 +1,90 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    build:
+      context: ./elasticsearch
+      args:
+        ELK_VERSION: $ELK_VERSION
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ELASTIC_PASSWORD: "changeme"
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      TZ: "Europe/London"
+      discovery.type: single-node
+      xpack.license.self_generated.type: basic
+      xpack.security.enabled: "true"
+      xpack.monitoring.collection.enabled: "true"
+      xpack.monitoring.elasticsearch.collection.enabled: "true"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - /storage/.docker/volumes/elk/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - /storage/.docker/volumes/elk/elasticsearch/data:/usr/share/elasticsearch/data
+    restart: unless-stopped
+    networks:
+      - elk
+
+  logstash:
+    container_name: logstash
+    build:
+      context: ./logstash
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:
+      - /storage/.docker/volumes/elk/logstash/config:/usr/share/logstash/config
+      - /storage/.docker/volumes/elk/logstash/pipelines:/usr/share/logstash/pipelines
+      - /storage/.docker/volumes/elk/logstash/data:/usr/share/logstash/data
+    ports:
+      - "514:5140/tcp" # syslog
+      - "514:5140/udp" # syslog
+      - "5044:5044"
+      - "5000:5000/tcp"
+      - "5000:5000/udp"
+      - "9600:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      TZ: "Europe/London"
+      PIPELINE_ORDERED: "false"
+      XPACK_MONITORING_ENABLED: "true"
+      XPACK_MONITORING_ELASTICSEARCH_USERNAME: "elastic"
+      XPACK_MONITORING_ELASTICSEARCH_PASSWORD: "changeme"
+    restart: unless-stopped
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+  
+  kibana:                              
+    container_name: kibana
+    build:          
+      context: ./kibana
+      args:
+        ELK_VERSION: $ELK_VERSION
+    volumes:         
+      - /storage/.docker/volumes/elk/kibana/config:/usr/share/kibana/config:ro
+    ports:
+      - "5601:5601"
+    environment:
+      TZ: "Europe/London"
+      MONITORING_KIBANA_COLLECTION_ENABLED: "true"
+      MONITORING_UI_CONTAINER_LOGSTASH_ENABLED: "true"
+      MONITORING_UI_ENABLED: "true"
+      MONITORING_ENABLE: "true"
+      ELASTICSEARCH_USERNAME: "elastic"
+      ELASTICSEARCH_PASSWORD: "changeme"
+    restart: unless-stopped
+    networks:                                             
+      - elk
+    depends_on:                  
+      - elasticsearch
+
+networks:
+  elk:
+    driver: bridge
+

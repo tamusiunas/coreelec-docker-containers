@@ -1,0 +1,11 @@
+version: "2.1"
+services:
+  duckdns:
+    image: ghcr.io/linuxserver/duckdns
+    container_name: duckdns
+    environment:
+      - TZ=Europe/London
+      - SUBDOMAINS=#PUT HERE YOUR DOMAIN@duckdns.org#
+      - TOKEN=#YOUR TOKEN#
+      - LOG_FILE=false #optional
+    restart: unless-stopped

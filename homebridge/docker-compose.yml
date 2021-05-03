@@ -1,0 +1,14 @@
+version: '2'
+services:
+  homebridge:
+    image: oznu/homebridge:ubuntu
+    container_name: homebridge
+    restart: always
+    network_mode: host
+    environment:
+      - HOMEBRIDGE_CONFIG_UI=1
+      - HOMEBRIDGE_CONFIG_UI_PORT=8581
+      - TZ=Europe/London
+    volumes:
+      - /storage/.docker/volumes/homebridge:/homebridge
+    restart: unless-stopped
