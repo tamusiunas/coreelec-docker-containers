@@ -37,8 +37,8 @@ services:
       args:
         ELK_VERSION: $ELK_VERSION
     volumes:
-      - /storage/.docker/volumes/elk/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
-      - /storage/.docker/volumes/elk/logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      - /storage/.docker/volumes/elk/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - /storage/.docker/volumes/elk/logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
       - /storage/.docker/volumes/elk/logstash/pipelines:/usr/share/logstash/pipelines
       - /storage/.docker/volumes/elk/logstash/data:/usr/share/logstash/data
     ports:
