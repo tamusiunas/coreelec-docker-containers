@@ -56,6 +56,7 @@ services:
       XPACK_MONITORING_ELASTICSEARCH_USERNAME: "elastic"
       XPACK_MONITORING_ELASTICSEARCH_PASSWORD: "changeme"
     restart: unless-stopped
+    command: --config.reload.automatic
     networks:
       - elk
     depends_on:
