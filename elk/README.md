@@ -23,6 +23,9 @@ cp -a storage/. /storage
 # Adjust permissions
 chown -R 1000:1000 /storage/.docker/volumes/elk
 
+# Create the network
+docker network create elk_elk
+
 #
 # The default username/password is elastic/changeme
 # To change the default password edit the files docker-compose.yml and /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
@@ -37,10 +40,11 @@ chown -R 1000:1000 /storage/.docker/volumes/elk
 #
 # Containers usage
 #
-docker-compose up # (run in foreground)
-docker-compose down # (remove container)
-docker-compose start # (run on background)
-docker-compose start # (stop service)
+docker-compose create # (Create services)
+docker-compose up # (Create and start containers - in foreground)
+docker-compose down # (Stop and remove resources)
+docker-compose start # (Start services - in background)
+docker-compose stop # (Stop services)
 
 ```
 

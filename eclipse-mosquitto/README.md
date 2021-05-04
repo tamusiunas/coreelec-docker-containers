@@ -25,12 +25,13 @@ chown -R 1883:1883 /storage/.docker/volumes/mosquitto/log
 chown -R 1883:1883 /storage/.docker/volumes/mosquitto/config
 
 #
-# Container usage
+# Containers usage
 #
-docker-compose up # (run in foreground)
-docker-compose down # (remove container)
-docker-compose start # (run on background)
-docker-compose start # (stop service)
+docker-compose create # (Create services)
+docker-compose up # (Create and start containers - in foreground)
+docker-compose down # (Stop and remove resources)
+docker-compose start # (Start services - in background)
+docker-compose stop # (Stop services)
 
 ```
 
