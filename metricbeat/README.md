@@ -17,7 +17,7 @@ cd coreelec-docker-containers/metricbeat
 # Important! Create the structure to persist data before starting the containers.
 #
 # Create the structure under /storage/.docker/volumes/elk/
-cp -a storage /storage
+cp -a storage/. /storage
 
 #
 # This container comes configured to send docker metrics to ElasticSearch, setup dashboards (load them into Kibana) and monitor the service.
