@@ -30,6 +30,11 @@ chown -R 1000:1000 /storage/.docker/volumes/elk
 #
 
 #
+# Logstash included in this container contains the input plugin syslog configured on port 5140 (container) and mapped to 514 (host).
+# You can check and configure input, output and filters here: /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
+#
+
+#
 # Containers usage
 #
 docker-compose up # (run in foreground)
