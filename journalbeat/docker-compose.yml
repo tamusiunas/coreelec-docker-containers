@@ -11,6 +11,7 @@ services:
       - /etc/machine-id:/etc/machine-id
       - /run/systemd:/run/systemd
       - /etc/hostname:/etc/hostname:ro
+      - /storage/.docker/volumes/journalbeat/journalbeat.yml:/usr/share/journalbeat/journalbeat.yml:ro
     environment:
       - KIBANA_HOST=#PUT HERE KIBANA HOST IP ADDRESS OR NAME#
       - ELASTICSEARCH_HOSTS=#PUT HERE ELASTIC SEARCH HOST IP ADDRESS OR NAME#
