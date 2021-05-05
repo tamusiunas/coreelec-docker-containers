@@ -63,8 +63,10 @@ Host | Conatiner | Protocol | Service
 5601 | 5601 | TCP | Kibana
 
 To access Kibana: http://HOSTNAME:5601
-Username: elastic
-Password: changeme
+
+Username: **elastic**
+
+Password: **changeme**
 
 It's recommended to use a 4GB RAM model to run ELK (ELK uses about 1.5GB RAM) and a fast SD-Card to store the data. 
 
