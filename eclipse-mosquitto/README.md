@@ -37,9 +37,9 @@ docker-compose stop # (Stop services)
 
 Ports mapped to host
 
-Container | Host 
----------------|----------
-1883 | 1883
-8883 | 8883
+Host | Container | Prtocol 
+-----|-----------|--------
+1883 | 1883 | TCP
+8883 | 8883 | TCP
 
 For more information about docker with CoreELEC see [docker-coreelec project](https://github.com/tamusiunas/docker-coreelec).
