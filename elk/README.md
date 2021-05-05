@@ -48,6 +48,24 @@ docker-compose stop # (Stop services)
 
 ```
 
+Ports mapped to host
+
+Host | Conatiner | Protocol | Service
+-----|-----------|----------|--------
+9200 | 9300 | TCP | Elasticsearch
+8883 | 8883 | TCP | Elasticsearch
+514  | 5140 | TCP | Logstash
+514  | 5140 | UDP | Logstash
+5044 | 5044 | TCP | Logstash
+5000 | 5000 | TCP | Logstash
+5000 | 5000 | UDP | Logstash
+9600 | 9600 | TCP | Logstash
+5601 | 5601 | TCP | Kibana
+
+To access Kibana: http://HOSTNAME:5601
+Username: elastic
+Password: changeme
+
 It's recommended to use a 4GB RAM model to run ELK (ELK uses about 1.5GB RAM) and a fast SD-Card to store the data. 
 
 For more information about docker with CoreELEC see [docker-coreelec project](https://github.com/tamusiunas/docker-coreelec).
