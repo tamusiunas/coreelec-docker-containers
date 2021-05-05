@@ -30,4 +30,10 @@ docker-compose stop # (Stop services)
 
 ```
 
+Ports mapped to host
+
+Host | Container | Prtocol 
+-----|-----------|--------
+8581 | 8581      | TCP
+
 For more information about docker with CoreELEC see [docker-coreelec project](https://github.com/tamusiunas/docker-coreelec).
