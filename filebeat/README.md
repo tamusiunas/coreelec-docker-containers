@@ -21,7 +21,8 @@ cd coreelec-docker-containers/filebeat
 cp -a storage/. /storage
 
 #
-# This container comes configured to send docker containers log to ElasticSearch, setup dashboards (load them into Kibana) and monitor the service.
+# This container comes configured to send docker containers log to ElasticSearch, setup dashboards (load 
+# them into Kibana) and monitor the service.
 #
 
 #
