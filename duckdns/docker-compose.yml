@@ -6,6 +6,6 @@ services:
     environment:
       - TZ=Europe/London
       - SUBDOMAINS=#PUT HERE YOUR DOMAIN@duckdns.org#
-      - TOKEN=#YOUR TOKEN#
+      - TOKEN=#PUT HERE YOUR TOKEN#
       - LOG_FILE=false #optional
     restart: unless-stopped
