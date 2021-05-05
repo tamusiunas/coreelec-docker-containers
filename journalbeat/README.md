@@ -1,4 +1,4 @@
-# Metricbeat container for CoreELEC ARM64
+# Journalbeat container for CoreELEC ARM64
 
 ## What does the service actually do?
 
