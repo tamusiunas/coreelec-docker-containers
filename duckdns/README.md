@@ -8,13 +8,14 @@ Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) t
 
 [https://www.duckdns.org](https://www.duckdns.org)
 
+- Before configure the service pick a token at [https://www.duckdns.org](https://www.duckdns.org)
+
 ## Usage:
+
+```bash
 git clone https://github.com/tamusiunas/coreelec-docker-containers.git
 cd coreelec-docker-containers/duckdns
 
-- Before configure the service pick a token at [https://www.duckdns.org](https://www.duckdns.org)
-
-```bash
 #
 # Important! Edit file docker-compose.yml and enter yout domain and token previously got.
 #
