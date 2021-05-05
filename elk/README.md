@@ -28,13 +28,20 @@ docker network create elk_elk
 
 #
 # The default username/password is elastic/changeme
-# To change the default password edit the files docker-compose.yml and /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
-# If you changed the password inside Kibana, edit the file /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf and update it
+#
+# To change the default password edit the files docker-compose.yml and 
+# /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
+#
+# If you changed the password inside Kibana, edit the file 
+# /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf and update it
 #
 
 #
-# Logstash included in this container contains the input plugin syslog configured on port 5140 (container) and mapped to 514 (host).
-# You can check and configure input, output and filters here: /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
+# Logstash included in this container contains the input plugin syslog 
+# configured on port 5140 (container) and mapped to 514 (host).
+#
+# You can check and configure input, output and filters here: 
+# /storage/.docker/volumes/elk/logstash/pipelines/pipeline_1.conf
 #
 
 #
