@@ -13,6 +13,6 @@ output.elasticsearch:
 setup.kibana:
   host: '${KIBANA_HOST:kibana:5601}'
 
-xpack.monitoring.enabled: false
+xpack.monitoring.enabled: true
 
-setup.dashboards.enabled: true
+setup.dashboards.enabled: false
