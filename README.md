@@ -17,4 +17,4 @@ Container|Description|Site
 [elk](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/elk)|Elasticsearch, Logstash, and Kibana|[elastic.co](https://www.elastic.co/what-is/elk-stack)
 [homebridge](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/homebridge)|Integrate smart home devices that do not natively support HomeKit|[homebridge.io](https://homebridge.io)
 [metricbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/metricbeat)|System-level monitoring|[elastic.co](https://www.elastic.co/beats/metricbeat)
-[journalbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/journalbeat)|Systemd events monitoring|[elastic.co](https://www.elastic.co/beats/journalbeat)
+[journalbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/journalbeat)|Systemd events monitoring|[elastic.co](https://www.elastic.co/guide/en/beats/journalbeat/current/journalbeat-overview.html)
