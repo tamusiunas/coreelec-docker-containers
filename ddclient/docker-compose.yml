@@ -6,5 +6,5 @@ services:
     environment:
       - TZ=Europe/London
     volumes:
-      - /storage/.docker/volumes/ddclient/config/ddclient.conf:/config/ddclient.conf:ro
+      - /storage/.docker/volumes/ddclient/config:/config
     restart: unless-stopped
