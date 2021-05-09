@@ -19,3 +19,4 @@ Container|Description|Site
 [metricbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/metricbeat)|System-level monitoring|[elastic.co](https://www.elastic.co/beats/metricbeat)
 [journalbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/journalbeat)|Systemd events monitoring|[elastic.co](https://www.elastic.co/guide/en/beats/journalbeat/current/journalbeat-overview.html)
 [filebeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/filebeat)|Log monitoring|[elastic.co](https://www.elastic.co/beats/filebeat)
+[heartbeat](https://github.com/tamusiunas/coreelec-docker-containers/tree/main/heartbit)|Log monitoring|[elastic.co](https://www.elastic.co/beats/heartbeat)
