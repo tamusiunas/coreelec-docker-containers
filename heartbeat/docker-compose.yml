@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  heartbeat:
+    image: tamusiunas/heartbeat
+    container_name: heartbeat
+    user: root
+    network_mode: host
+    volumes:
+      - /storage/.docker/volumes/heartbeat/heartbeat.yml:/usr/share/heartbeat/heartbeat.yml:ro
+    environment:
+      - KIBANA_HOST=#PUT HERE KIBANA HOST IP ADDRESS OR NAME#
+      - ELASTICSEARCH_HOSTS=#PUT HERE ELASTIC SEARCH HOST IP ADDRESS OR NAME#
+      - ELASTICSEARCH_USERNAME=elastic # This is the default username. If it's different from yours, change it
+      - ELASTICSEARCH_PASSWORD=changeme #This is the default password. If it's different from yours, change it
+      - TZ=Europe/London
+    command: -strict.perms=false
+    restart: unless-stopped
+    deploy:
+      mode: global
+
