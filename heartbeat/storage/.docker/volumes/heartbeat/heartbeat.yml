@@ -16,6 +16,7 @@ heartbeat.monitors:
 processors:
   - add_docker_metadata: ~
   - add_host_metadata: ~
+  - add_cloud_metadata: ~
 
 output.elasticsearch:
   hosts: '${ELASTICSEARCH_HOSTS:elasticsearch:9200}'
