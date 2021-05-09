@@ -21,7 +21,7 @@ cd coreelec-docker-containers/heartbeat
 cp -a storage/. /storage
 
 #
-# Edit /storage/.docker/volumes/heartbeat/heartbeat.yml and configure hosts to monitor HTTP, ICMP and TCP
+# Edit /storage/.docker/volumes/heartbeat/heartbeat.yml and configure hosts to be monitored via  HTTP, ICMP and TCP
 # (there are two examples for HTTP and ICMP)
 #
 
