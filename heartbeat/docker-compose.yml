@@ -8,6 +8,7 @@ services:
     network_mode: host
     volumes:
       - /storage/.docker/volumes/heartbeat/heartbeat.yml:/usr/share/heartbeat/heartbeat.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       - KIBANA_HOST=#PUT HERE KIBANA HOST IP ADDRESS OR NAME#
       - ELASTICSEARCH_HOSTS=#PUT HERE ELASTIC SEARCH HOST IP ADDRESS OR NAME#

@@ -1,18 +1,21 @@
 heartbeat.monitors:
 - type: http
+  enabled: true
   schedule: '@every 5s'
   urls:
     - http://elasticsearch:9200
     - http://kibana:5601
 
 - type: icmp
+  enabled: true
   schedule: '@every 5s'
   hosts:
     - elasticsearch
     - kibana
 
 processors:
-- add_cloud_metadata: ~
+  - add_docker_metadata:
+  - add_host_metadata: ~
 
 output.elasticsearch:
   hosts: '${ELASTICSEARCH_HOSTS:elasticsearch:9200}'
@@ -25,3 +28,4 @@ setup.kibana:
 monitoring.enabled: true
 
 setup.dashboards.enabled: false
+
