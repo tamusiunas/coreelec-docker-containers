@@ -24,4 +24,4 @@ setup.kibana:
 
 monitoring.enabled: true
 
-setup.dashboards.enabled: true
+setup.dashboards.enabled: false
